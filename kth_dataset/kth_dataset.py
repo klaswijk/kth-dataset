@@ -7,7 +7,7 @@ from sklearn.utils import check_random_state
 
 
 def _download(path):
-    url = "https://github.com/klaswijk/kth-dataset/blob/main/kth_logo.png"
+    url = "https://github.com/klaswijk/kth-dataset/blob/main/kth_logo.png?raw=true"
     response = requests.get(url)
     image = Image.open(BytesIO(response.content))
     image.save(path)
