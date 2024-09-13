@@ -58,7 +58,7 @@ if __name__ == "__main__":
     with writer.saving(fig, "kth_scatter.gif", dpi=300):
         for i in range(0, 10_000, 50):
             ax.clear()
-            ax.scatter(x[:i, 0], x[:i, 1], s=10, alpha=0.5, color="#000061")
+            ax.scatter(x[:i, 0], x[:i, 1], s=3, color="#000061")
             ax.set_xlim(-2.5, 2.5)
             ax.set_ylim(-2.5, 2.5)
             ax.set_aspect("equal")
